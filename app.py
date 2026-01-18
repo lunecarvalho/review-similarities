@@ -7,11 +7,10 @@ import numpy as np
 from nltk.tokenize import word_tokenize
 from functools import partial 
 from nltk.corpus import stopwords 
-from sklearn.metrics.pairwire import cosine_similarity 
+from sklearn.metrics.pairwise import cosine_similarity 
 import tensorflow_hub as hub
 
 nltk.download('punkt')
-nltk.download('punkt_tab')
 nltk.download('stopwords')
 
 modulo_url ='https://tfhub.dev/google/universal-sentence-encoder/4'
@@ -55,7 +54,7 @@ def process_csv(arquivo, tema):
 with gr.Blocks() as app:
   with gr.Row():
     gr.Markdown('## Encontrando as reviews mais similares ao tema')
-  csv_entrada = gr.File(label='Envie o CVS com as reviews', file_types=['.csv'])
+  csv_entrada = gr.File(label='Envie o CSV com as reviews', file_types=['.csv'])
   tema_entrada = gr.Textbox(label='Digite o tema de busca (Ex.: "Entrega")')
   
   botao = gr.Button('Clique para buscas as reviews')

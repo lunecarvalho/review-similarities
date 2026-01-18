@@ -70,15 +70,4 @@ The system allows users to upload a CSV file containing textual reviews and, bas
 
 __________________________
 
-title: Review Similarities
-emoji: 📊
-colorFrom: gray
-colorTo: pink
-sdk: gradio
-sdk_version: 6.3.0
-app_file: app.py
-pinned: false
-
----
-
 Check out the application on Hugging Face: https://huggingface.co/spaces/lunecarvalho/review-similarities/

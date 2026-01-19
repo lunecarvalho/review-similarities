@@ -57,7 +57,7 @@ with gr.Blocks() as app:
   csv_entrada = gr.File(label='Envie o CSV com as reviews', file_types=['.csv'])
   tema_entrada = gr.Textbox(label='Digite o tema de busca (Ex.: "Entrega")')
   
-  botao = gr.Button('Clique para buscas as reviews')
+  botao = gr.Button('Clique para buscar as reviews')
 
   tabela_saida = gr.Dataframe(label='Top 200 reviews similares', headers=['Nota', 'Reviews'], interactive=False)
   arquivo_saida = gr.File(label='Baixar CSV ordenado com as reviews mais similares ao tema', interactive=False)

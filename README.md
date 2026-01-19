@@ -67,7 +67,3 @@ The system allows users to upload a CSV file containing textual reviews and, bas
 - **Scikit-learn**
 - **NumPy**
 - **Unidecode**
-
-__________________________
-
-Check out the application on Hugging Face: https://huggingface.co/spaces/lunecarvalho/review-similarities/
